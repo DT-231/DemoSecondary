@@ -1,10 +1,12 @@
 import './App.css'
-
+import Banner from '~/components/Banner'
 function App() {
 
   return (
     <>
-      <div className='text-xl font-bold text-red-800'>hello</div>
+      <div>
+        <Banner />
+      </div>
     </>
   )
 }

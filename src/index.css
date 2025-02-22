@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+@theme {
+    --color-primary: rgb(230, 220, 200);
+    --font-Playfair : "Playfair Display", serif;
+    --font-Lora: "Lora", serif;
+}
