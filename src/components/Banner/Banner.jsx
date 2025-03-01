@@ -1,6 +1,5 @@
-import images from "../assets/Imgs";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import images from "../../assets/Imgs";
+
 
 const Banner = () => {
     return (
@@ -12,12 +11,6 @@ const Banner = () => {
 
             {/* Content */}
             <div className="relative z-10 flex flex-col items-center !py-3 !px-5 h-full">
-                {/* Header */}
-                <div className="flex justify-between items-center w-full py-5">
-                    <img src={images.LogoImg} alt="Logo" className="w-36 " />
-                    <FontAwesomeIcon icon={faBars} className="text-primary text-2xl" />
-                </div>
-
                 {/* Banner Content */}
                 <div className="text-center text-primary flex flex-col justify-center flex-grow gap-6">
                     <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl leading-normal font-Playfair">
