@@ -16,10 +16,11 @@ function ProjectList() {
                     <ProjectItem key={i} imageSrc={src} />
                 ))}
             </div>
-            <div className="transform translate-x-165 translate-y-25">
-                <button className="text-primary border-2 border-primary px-10 py-4 text-2xl font-bold hover:bg-primary hover:text-secondary cursor-pointer">
+            <div className="transform  translate-y-25 flex justify-center">
+                <button className="text-primary border-2  border-primary px-10 py-4 text-2xl font-bold hover:bg-primary hover:text-secondary cursor-pointer">
                     Xem thêm
                 </button>
+              
             </div>
         </div>
     );

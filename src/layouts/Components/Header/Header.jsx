@@ -53,10 +53,10 @@ function Header() {
 
             {/* Menu chính */}
             <div
-                className={`absolute top-full left-0 right-0 w-full p-4 flex flex-col md:bg-transparent bg-secondary/80 items-center space-y-4 
+                className={`absolute top-full left-0 right-0  p-3 flex flex-col md:bg-transparent bg-secondary/80 items-center space-y-4 
                 lg:space-y-0 lg:flex lg:flex-row lg:static lg:w-auto lg:items-center lg:space-x-10 text-primary 
                 lg:text-xl text-base transition-all duration-300 ease-in-out transform ${
-                    isOpen ? "translate-y-0 opacity-100" : "-translate-y-96 opacity-0 lg:opacity-100 lg:translate-y-0"
+                    isOpen ? "translate-y-0 opacity-100" : "-translate-y-80 opacity-0 lg:opacity-100 lg:translate-y-0"
                 } z-50`}
             >
                 {navBarList.map(({ path, label }) => (
