@@ -64,9 +64,9 @@ function Header() {
                         key={path}
                         to={path}
                         className="relative py-2 transition-all duration-300 ease-in-out
-                        after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] 
-                        after:bg-primary after:transition-all after:duration-300    
-                        after:transform after:-translate-x-1/2"
+        after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-[2px] 
+        after:bg-primary after:transition-all after:duration-300    
+        after:transform after:-translate-x-1/2 hover:after:w-full"
                         onClick={() => setIsOpen(false)}
                     >
                         {label}
