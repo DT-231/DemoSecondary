@@ -1,4 +1,4 @@
-import ProjectItem from "./src/Common/ProjectItem/ProjectItem";
+import ProjectItem from "../../common/ProjectItem/ProjectItem";
 import images from "~/assets/Imgs";
 
 function ProjectList() {
