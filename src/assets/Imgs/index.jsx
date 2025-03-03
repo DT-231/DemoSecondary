@@ -7,7 +7,8 @@ const images = {
     BannerImg: BannerImg,
     LogoImg: LogoImg,
     ProjectImg: ProjectImg,
-    WhyChooseUsImg : WhyChooseUsImg,
+    WhyChooseUsImg: WhyChooseUsImg,
+
 };
 
 export default images;

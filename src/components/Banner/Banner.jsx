@@ -23,11 +23,11 @@ const Banner = () => {
             <div className="relative z-10 flex flex-col items-center py-3 px-5 h-full">
                 {/* Banner Content */}
                 <div className="text-center text-primary flex flex-col justify-center flex-grow gap-6">
-                    <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl leading-normal font-primary">
+                    <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl leading-normal font-primary">
                         THIẾT KẾ KIẾN TRÚC <br /> NỘI THẤT
                     </h1>
 
-                    <p className="text-lg leading-relaxed font-secondary">
+                    <p className="text-xl leading-relaxed font-secondary">
                         Mộc Đức. <br />
                         Thiết kế thi công Kiến Trúc và
                         {checkWith && <br />} Nội Thất chuyên nghiệp.

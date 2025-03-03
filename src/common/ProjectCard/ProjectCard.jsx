@@ -1,5 +1,8 @@
 function ProjectCard({ projectContent, sideImg = "left" }) {
     const isLeft = sideImg === "left";
+    // left 
+    //  right 
+    // mobile
     return (
         <div
             className={`lg:w-5xl w-full mx-auto font-primary flex flex-col lg:flex-row ${
@@ -14,7 +17,7 @@ function ProjectCard({ projectContent, sideImg = "left" }) {
                         alt=""
                     />
                     <button
-                        className={`absolute lg:bottom-[-30px] bottom-[-10px] left-1/2 transform -translate-x-1/2 lg:text-base text-sm bg-primary/20 px-5 py-2 hover:bg-primary/50 cursor-pointer`}
+                        className={`absolute lg:bottom-[-30px] bottom-[-10px]  lg:text-base text-sm bg-primary/20 md:px-10 md:py-3   px-5 py-2 hover:bg-primary/50 cursor-pointer ${isLeft ? "right-[-50px]" : "left-[10px] transform -translate-x-1/2"}`}
                     >
                         Xem Dự Án
                     </button>

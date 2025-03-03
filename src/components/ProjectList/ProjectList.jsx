@@ -1,20 +1,28 @@
 import ProjectItem from "../../common/ProjectItem/ProjectItem";
 import images from "~/assets/Imgs";
+import img from "~/assets/testImg";
 
 function ProjectList() {
+    const srcImg = [img.testImg, img.Img2, img.Img3, img.Img4, img.Img5, img.Img6, img.Img7, img.Img8];
+
     return (
-        <div className="bg-black pt-[100px] lg:pb-[250px] pb-[150px] font-primary w-full">
-            <h1 className="text-primary lg:text-5xl md:text-3xl text-2xl text-center">
-                Dự Án Đã Và Đang Thi Công
-            </h1>
+        <div className="bg-black pt-[100px] lg:pb-[350px] pb-[150px] font-primary w-full">
+            <h1 className="text-primary lg:text-5xl md:text-3xl text-2xl text-center">Dự Án Đã Và Đang Thi Công</h1>
             <div className="pt-[90px] flex flex-wrap justify-center gap-5">
-                {[...Array(20)].map((_, i) => (
-                    <ProjectItem key={i} imageSrc={images.ProjectImg} title={`Dự Án ${i + 1}`} />
+                {/* {[...Array(8)].map((_, i) => (
+                    <ProjectItem key={i} imageSrc={images.testImg} title={`Dự Án ${i + 1}`} />
+                ))} */}
+                {srcImg.map((src, i) => (
+                    <ProjectItem key={i} imageSrc={src} />
                 ))}
+            </div>
+            <div className="transform translate-x-165 translate-y-25">
+                <button className="text-primary border-2 border-primary px-10 py-4 text-2xl font-bold hover:bg-primary hover:text-secondary cursor-pointer">
+                    Xem thêm
+                </button>
             </div>
         </div>
     );
 }
 
 export default ProjectList;
-
