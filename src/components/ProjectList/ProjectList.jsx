@@ -1,10 +1,18 @@
 import ProjectItem from "../../common/ProjectItem/ProjectItem";
-import images from "~/assets/Imgs";
 import img from "~/assets/testImg";
 
 function ProjectList() {
-    const srcImg = [img.testImg, img.Img5, img.Img6,img.testImg, img.Img5, img.Img6, img.Img5, img.Img6];
-
+    // const srcImg = [img.testImg, img.Img5, img.Img6,img.testImg, img.Img5, img.Img6, img.Img5, img.Img6];
+    const srcImg = [
+        "https://img.upanh.tv/2025/03/03/57a4607f5e7e84daa.png",
+        "https://img.upanh.tv/2025/03/03/6.png",
+        "https://img.upanh.tv/2025/03/03/test.png",
+        "https://img.upanh.tv/2025/03/03/57a4607f5e7e84daa.png",
+        "https://img.upanh.tv/2025/03/03/6.png",
+        "https://img.upanh.tv/2025/03/03/test.png",
+        "https://img.upanh.tv/2025/03/03/57a4607f5e7e84daa.png",
+        "https://img.upanh.tv/2025/03/03/6.png",
+    ];
     return (
         <div className="bg-black pt-[100px] lg:pb-[350px] pb-[150px] font-primary w-full">
             <h1 className="text-primary lg:text-5xl md:text-3xl text-2xl text-center">Dự Án Đã Và Đang Thi Công</h1>
