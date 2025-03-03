@@ -2,7 +2,7 @@ function ProjectItem({ imageSrc, title }) {
     console.log(imageSrc);
 
     return (
-        <div className="relative w-auto max-w-[350px] aspect-[3/5] overflow-hidden rounded-md shadow-lg">
+        <div className="relative w-auto max-w-xs aspect-[3/5] overflow-hidden rounded-md shadow-lg">
             {/* Tiêu đề */}
             <h5 className="absolute top-2 left-2 text-white font-bold z-10">{title}</h5>
 

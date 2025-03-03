@@ -13,7 +13,7 @@ function ProjectList() {
                     <ProjectItem key={i} imageSrc={images.testImg} title={`Dự Án ${i + 1}`} />
                 ))} */}
                 {srcImg.map((src, i) => (
-                    <ProjectItem key={i} imageSrc={src} />
+                    <ProjectItem key={i} imageSrc={src} title={`Dự Án ${i + 1}`}  />
                 ))}
             </div>
             <div className="transform  translate-y-25 flex justify-center">
