@@ -3,7 +3,7 @@ import images from "~/assets/Imgs";
 import img from "~/assets/testImg";
 
 function ProjectList() {
-    const srcImg = [img.testImg, img.Img2, img.Img3, img.Img4, img.Img5, img.Img6, img.Img7, img.Img8];
+    const srcImg = [img.testImg, img.Img5, img.Img6,img.testImg, img.Img5, img.Img6, img.Img5, img.Img6];
 
     return (
         <div className="bg-black pt-[100px] lg:pb-[350px] pb-[150px] font-primary w-full">
@@ -13,14 +13,13 @@ function ProjectList() {
                     <ProjectItem key={i} imageSrc={images.testImg} title={`Dự Án ${i + 1}`} />
                 ))} */}
                 {srcImg.map((src, i) => (
-                    <ProjectItem key={i} imageSrc={src} title={`Dự Án ${i + 1}`}  />
+                    <ProjectItem key={i} imageSrc={src} title={`Dự Án ${i + 1}`} />
                 ))}
             </div>
             <div className="transform  translate-y-25 flex justify-center">
                 <button className="text-primary border-2  border-primary px-10 py-4 text-2xl font-bold hover:bg-primary hover:text-secondary cursor-pointer">
                     Xem thêm
                 </button>
-              
             </div>
         </div>
     );
