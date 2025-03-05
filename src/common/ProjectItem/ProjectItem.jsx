@@ -7,7 +7,7 @@ function ProjectItem({ imageSrc, title }) {
             <h5 className="absolute top-2 left-2 text-white font-bold z-10">{title}</h5>
 
             {/* Hình ảnh + Overlay */}
-            <div className="relative lg:w-full max-w-[200px] min-w-[120px] h-full before:absolute before:inset-0 before:bg-primary/30 hover:before:opacity-0">
+            <div className="relative lg:w-full w-[200px] h-full before:absolute before:inset-0 before:bg-primary/30 hover:before:opacity-0">
                 <img src={imageSrc} alt={title} className="w-full h-full object-cover" />
             </div>
         </div>
