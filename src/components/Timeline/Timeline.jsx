@@ -10,8 +10,8 @@ function Timeline() {
     ];
 
     return (
-        <div className="bg-secondary py-10 w-full">
-            <h3 className="md:text-6xl sm:text-2xl text-xl text-primary font-primary mx-auto md:w-5xl w-[320px]">
+        <div className="bg-secondary py-10 w-full relative">
+            <h3 className="md:text-7xl  sm:text-2xl text-5xl  text-primary font-primary text-center w-auto">
                 QUY TRÌNH GS INTERIOR DESGN
             </h3>
             <ol className="lg:mt-30 mt-15  border-l md:w-sm w-xs border-primary dark:border-primary mx-auto">

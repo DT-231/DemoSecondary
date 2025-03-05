@@ -1,11 +1,9 @@
-
 function FormFooter() {
-
     return (
         <form className="px-4">
             <div className="lg:w-xl   w-full border-2 bg-white border-gray-300  shadow-sm mb-5">
-                <label htmlFor="nameInput" className="block px-3 pt-2 text-sm font-medium text-gray-700">
-                    Bạn
+                <label htmlFor="nameInput" className="block px-3 pt-2 text-lg font-medium text-gray-700">
+                    Bạn :
                 </label>
                 <input
                     id="nameInput"
@@ -16,8 +14,8 @@ function FormFooter() {
                 />
             </div>
             <div className="lg:w-xl  w-full border-2 bg-white border-gray-300  shadow-sm mb-5">
-                <label htmlFor="EmailInput" className="block px-3 pt-2 text-sm font-medium text-gray-700  ">
-                    Email
+                <label htmlFor="EmailInput" className="block px-3 pt-2 text-lg font-medium text-gray-700  ">
+                    Email :
                 </label>
                 <input
                     id="EmailInput"
@@ -28,8 +26,8 @@ function FormFooter() {
                 />
             </div>
             <div className="lg:w-xl  w-full border-2 bg-white border-gray-300  shadow-sm mb-5">
-                <label htmlFor="PhoneNumberInput" className="block px-3 pt-2 text-sm font-medium text-gray-700  ">
-                    Điện thoại
+                <label htmlFor="PhoneNumberInput" className="block px-3 pt-2 text-lg font-medium text-gray-700  ">
+                    Điện thoại :
                 </label>
                 <input
                     id="PhoneNumberInput"
@@ -39,8 +37,8 @@ function FormFooter() {
                    placeholder-gray-400 text-gray-900  outline-none"
                 />
 
-                <label htmlFor="MessageInput" className="block px-3 pt-2 text-sm font-medium text-gray-700 ">
-                    Lời nhắn
+                <label htmlFor="MessageInput" className="block px-3 pt-2 text-lg font-medium text-gray-700 ">
+                    Lời nhắn :
                 </label>
                 <textarea
                     id="MessageInput"
