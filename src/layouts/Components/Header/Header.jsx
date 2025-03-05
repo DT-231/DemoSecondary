@@ -32,7 +32,7 @@ function Header() {
 
     return (
         <div
-            className={`fixed top-0 left-0 w-full flex justify-between items-center lg:px-8 px-2 py-2 font-primary z-50 
+            className={`fixed top-0 left-0 w-full flex flex-row justify-between items-center lg:px-8 px-2 py-2 font-primary z-50 
                 transition-all duration-300 ease-in-out ${
                     isScrolled ? "bg-secondary/50 backdrop-blur-md md:h-16" : "bg-secondary"
                 }`}

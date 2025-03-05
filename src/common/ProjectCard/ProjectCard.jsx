@@ -1,7 +1,7 @@
 function ProjectCard({ projectContent, sideImg = "left" }) {
     const isLeft = sideImg === "left";
-    // left 
-    //  right 
+    // left
+    //  right
     // mobile
     return (
         <div
@@ -17,7 +17,9 @@ function ProjectCard({ projectContent, sideImg = "left" }) {
                         alt=""
                     />
                     <button
-                        className={`absolute lg:bottom-[-30px] bottom-[-10px]  lg:text-base text-sm bg-primary/20 md:px-10 md:py-3   px-5 py-2 hover:bg-primary/50 cursor-pointer ${isLeft ? "right-[-50px]" : "left-[10px] transform -translate-x-1/2"}`}
+                        className={`absolute lg:bottom-[-30px] bottom-[-10px]  lg:text-base text-sm bg-primary/20 md:px-10 md:py-3   px-5 py-2 hover:bg-primary/50 cursor-pointer ${
+                            isLeft ? "md:right-[-50px] right-[100px]" : "md:left-[10px] left-[150px] transform -translate-x-1/2"
+                        }`}
                     >
                         Xem Dự Án
                     </button>

@@ -7,6 +7,18 @@
     font-style: normal;
     src: url(./assets/Fonts/PlayfairDisplay-Bold.ttf);
 }
+@font-face {
+    font-family: "Playfair Display";
+    font-weight: Medium;
+    font-style: normal;
+    src: url(./assets/Fonts/PlayfairDisplay-Medium.ttf);
+}
+@font-face {
+    font-family: "Playfair Display";
+    font-weight: Regular;
+    font-style: normal;
+    src: url(./assets/Fonts/PlayfairDisplay-Regular.ttf);
+}
 
 
 @font-face {

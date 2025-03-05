@@ -16,12 +16,14 @@
         "@fortawesome/free-solid-svg-icons": "^6.5.1",
         "@fortawesome/react-fontawesome": "^0.2.0",
         "@tailwindcss/vite": "^4.0.6",
+    
         "furniture_web": "file:",
-        "pagedone": "^1.2.2",
+
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
         "react-router-dom": "^7.2.0",
-        "swiper": "^11.2.4",
+        "react-slick": "^0.30.3",
+        "slick-carousel": "^1.8.1",
         "tailwindcss": "^4.0.6"
     },
     "devDependencies": {

@@ -1,71 +1,87 @@
-import React, { useEffect } from "react";
+import React, { useRef } from "react";
+import Slider from "react-slick";
+import imgs from "../../assets/Imgs";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./Slide.css";
-import images from "../../assets/Imgs";
+import icons from "../../assets/Icons"
 
-function Slide() {
-    const imgs = [
-        images.BannerImg,
-        images.WhyChooseUsImg,
-        images.BannerImg,
-        images.WhyChooseUsImg,
-        images.BannerImg,
-        images.WhyChooseUsImg,
-        images.BannerImg,
-        images.WhyChooseUsImg,
-    ];
+const images = [
+    imgs.BannerImg,
+    imgs.WhyChooseUsImg,
+    imgs.BannerImg,
+    imgs.WhyChooseUsImg,
+    imgs.BannerImg,
+    imgs.WhyChooseUsImg,
+    imgs.BannerImg,
+    imgs.WhyChooseUsImg,
+];
 
-    useEffect(() => {
-        const slidesContainer = document.querySelector(".slides");
-        const slides = document.querySelectorAll(".slide");
-        let currentIndex = 0;
-
-        const updateSlides = () => {
-            // Cập nhật trạng thái active cho các slide
-            slides.forEach((slide, index) => {
-                if (index === currentIndex) {
-                    slide.classList.add("active");
-                } else {    
-                    slide.classList.remove("active");
-                }
-            });
-
-            // Tính toán chuyển động đơn giản hơn
-            const slideWidth = slides[0].clientWidth;
-            slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-        };
-
-        const nextSlide = () => {
-            currentIndex = (currentIndex + 1) % slides.length;
-            updateSlides();
-        };
-
-        updateSlides();
-        const interval = setInterval(nextSlide, 3000);
-
-        return () => clearInterval(interval);
-    }, []);
+function CenterMode() {
+    const sliderRef = useRef(null);
+    const settings = {
+        className: "center",
+        centerMode: true,
+        infinite: true,
+        arrows: false,
+        centerPadding: "0px",
+        slidesToShow: 1,
+        speed: 500,
+        // adaptiveHeight: true,
+        ref: sliderRef ,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1536, // 2xl
+                settings: { slidesToShow: 1 },
+            },
+            {
+                breakpoint: 1280, // xl
+                settings: { slidesToShow: 1 },
+            },
+            {
+                breakpoint: 1024, // lg
+                settings: { slidesToShow: 1 },
+            },
+            {
+                breakpoint: 768, // md
+                settings: { slidesToShow: 1 },
+            },
+            {
+                breakpoint: 640, // sm
+                settings: { slidesToShow: 1 },
+            },
+        ],
+    };
+    const goToNextSlide = () => {
+        if (sliderRef.current) {
+            sliderRef.current.slickNext();
+        }
+    };
 
     return (
-        // Thêm kích thước cố định và overflow-hidden cho container chính
-        <div className="bg-white w-full" style={{ maxWidth: "100%" }}>
-            {/* Container với chiều rộng cố định và overflow-hidden */}
-            <div className="w-full overflow-hidden" style={{ maxWidth: "100%" }}>
-                <div className="slides flex transition-transform duration-500 ease-linear">
-                    {imgs.map((src, i) => (
-                        <div key={i} className="slide flex-shrink-0 w-64 md:w-80 lg:w-96">
-                            <div className="bg-indigo-50 rounded-2xl h-64 md:h-80 lg:h-96 flex justify-center items-center m-2">
-                                <img
-                                    src={src}
-                                    alt={`Slide ${i + 1}`}
-                                    className="w-full h-full object-cover rounded-2xl"
-                                />
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
+        <div className="slider-container w-full">
+            <Slider {...settings}>
+                {images.map((srcImg, index) => (
+                    <div
+                        key={index}
+                        className="px-1 sm:px-5 2xl:h-[600px] 
+xl:h-[500px]    lg:h-[400px]    
+md:h-[300px]    sm:h-[200px]   
+h-[150px]       "
+                    >
+                        <img src={srcImg} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
+                    </div>
+                ))}
+            </Slider>
+            <img
+                src={icons.arrow}
+                onClick={goToNextSlide}
+                className="md:w-[70px] w-[50px] md:h-[20px] h-[10px] absolute md:right-30 right-10 md:-bottom-1 bottom-2 transform -translate-y-1/2 cursor-pointer z-10"
+            />
         </div>
     );
 }
 
-export default Slide;
+export default CenterMode;

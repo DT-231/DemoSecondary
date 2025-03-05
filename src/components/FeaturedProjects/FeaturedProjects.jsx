@@ -8,7 +8,7 @@ function FeaturedProjects() {
             "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad ",
     };
     return (
-        <div className="py-16 pb-50 bg-secondary text-primary h-auto">
+        <div className="py-16 md:pb-100 pb-50 bg-secondary text-primary h-auto">
             <h4 className=" lg:text-4xl text-2xl font-bold font-primary text-center mb-20">
                 Dự án tiêu biểu
             </h4>
